@@ -1,24 +1,13 @@
-# README
+# rails_with_active_admin_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tested Environment
 
-Things you may want to cover:
+- macOS
+- Rails 6.1.4
+- Devise 4.8.0
 
-* Ruby version
+　  
 
-* System dependencies
+## Related Blog (Written in Japanese)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Rails + Active Adminで、Active Admin Controllerのcreate/update/destroyをオーバーライドする - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/07/17/214820)
