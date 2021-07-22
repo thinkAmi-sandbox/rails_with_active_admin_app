@@ -12,3 +12,4 @@
 
 - [Rails + Active Adminで、Active Admin Controllerのcreate/update/destroyをオーバーライドする - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/07/17/214820)
 - [Rails + Active Adminでは、Strong Parameters のメソッド名は permitted_params だった - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/07/19/001805)
+- [Rails + Active Adminで、Active Admin向けのテストコードを request spec で書いてみた - メモ的な思考的な](https://thinkami.hatenablog.com/entry/2021/07/22/221746)
