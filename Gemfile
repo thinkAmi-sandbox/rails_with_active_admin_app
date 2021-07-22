@@ -57,3 +57,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activeadmin'
 gem 'devise'
+
+group :development, :test do
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+end
+
+# Ruby3.0では、rspec実行時にエラーとなるため追加
+gem 'rexml'

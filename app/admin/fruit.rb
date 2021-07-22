@@ -4,10 +4,22 @@ ActiveAdmin.register Fruit do
   # コントローラのcreate/update/destroyをオーバーライド
   controller do
     def create
-      super do |format|
-        logger.debug(permitted_params)
-        call_api_with_params(permitted_params[:fruit][:name])
+      ApplicationRecord.transaction do
+        super do |format|
+          if @fruit.valid?
+            call_api_with_params(permitted_params[:fruit][:name])
+            # redirectするので flash
+            flash[:notice] = 'success'
+          else
+            # renderなので flash.now
+            flash.now[:alert] = 'wrong!'
+          end
+        end
       end
+
+    rescue StandardError
+      flash.now[:error] = 'exception!'
+      render :new
     end
 
     def update
